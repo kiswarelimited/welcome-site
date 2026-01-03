@@ -122,6 +122,39 @@ export default function Services() {
                 </div>
             </section>
 
+            {/* Case Studies */}
+            <section className="py-20 bg-gray-900 border-t border-gray-800">
+                <div className="max-w-6xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Selected Case Studies</h2>
+                        <p className="text-gray-300 max-w-2xl mx-auto">Examples of how we deliver measurable business outcomes through software and digital strategy.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                            <h3 className="text-white font-semibold mb-2">Global logistics provider</h3>
+                            <p className="text-gray-300 text-sm mb-2">Challenge: Fragmented legacy systems caused delays and operational complexity.</p>
+                            <p className="text-gray-300 text-sm">Solution: Designed and delivered a centralized logistics platform integrating tracking, automation, and real-time reporting.</p>
+                            <p className="text-blue-400 text-sm mt-3 font-medium">Result: Reduced processing time and improved on-time deliveries.</p>
+                        </div>
+
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                            <h3 className="text-white font-semibold mb-2">Fintech startup</h3>
+                            <p className="text-gray-300 text-sm mb-2">Challenge: Low user activation due to friction in onboarding and product complexity.</p>
+                            <p className="text-gray-300 text-sm">Solution: Delivered a streamlined onboarding flow and optimized mobile experience focused on conversion.</p>
+                            <p className="text-blue-400 text-sm mt-3 font-medium">Result: Improved activation and engagement metrics.</p>
+                        </div>
+
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                            <h3 className="text-white font-semibold mb-2">Regional retail chain</h3>
+                            <p className="text-gray-300 text-sm mb-2">Challenge: Inventory inaccuracies and stockouts impacted sales and customer experience.</p>
+                            <p className="text-gray-300 text-sm">Solution: Implemented a centralized inventory and forecasting system integrated with point-of-sale.</p>
+                            <p className="text-blue-400 text-sm mt-3 font-medium">Result: Reduced stockouts and improved inventory turnover.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Process Section */}
             <section className="py-20 bg-gray-900 border-t border-gray-800">
                 <div className="max-w-6xl mx-auto px-6">

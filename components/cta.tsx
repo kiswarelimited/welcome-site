@@ -22,11 +22,11 @@ export default function CTA() {
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                     Ready to Transform Your Business?
                 </h2>
-                
+
                 <p className="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
-                    Let's discuss how we can help you achieve your goals with innovative software solutions.
+                    Contact our team to explore how we can support your strategic objectives with tailored software and delivery expertise.
                 </p>
-                
+
                 {/* Modern Classic Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <Link
@@ -35,7 +35,7 @@ export default function CTA() {
                     >
                         Start Your Project
                     </Link>
-                    
+
                     <Link
                         href="/services"
                         className="bg-transparent text-gray-300 px-8 py-3 rounded-lg font-semibold border border-gray-600 hover:border-gray-400 transition-all duration-200 hover:bg-white/5 backdrop-blur-sm"

@@ -22,7 +22,7 @@ export default function Testimonial() {
 
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
                     <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-                        Don't just take our word for it - hear from our satisfied clients
+                        Do not just take our word for it — read what our clients say about working with us.
                     </p>
                 </div>
 
@@ -45,7 +45,7 @@ export default function Testimonial() {
                         }
                     ].map((testimonial, index) => (
                         <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 p-6 hover:border-blue-500/30 transition-all duration-300">
-                            <p className="text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
+                            <p className="text-gray-300 mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
                             <div>
                                 <p className="text-white font-semibold">{testimonial.name}</p>
                                 <p className="text-blue-400 text-sm">{testimonial.position}</p>

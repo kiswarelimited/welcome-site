@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 export default function Hero() {
     return (
@@ -25,9 +24,9 @@ export default function Hero() {
 
                     {/* Professional Subheading */}
                     {/* i want to reduce the text font */}
-                    
+
                     <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl leading-relaxed">
-                        We build scalable software solutions that optimize operations, 
+                        We build scalable software solutions that optimize operations,
                         drive measurable results, and position your business for future growth.
                     </p>
                 </div>

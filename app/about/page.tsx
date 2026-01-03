@@ -78,8 +78,7 @@ export default function About() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        We are a Nigerian-based software development company dedicated to creating
-                        transformative digital solutions that drive business growth and technological advancement.
+                        We are a Nigeria-headquartered software engineering firm that designs and delivers enterprise-grade digital solutions to drive measurable business outcomes and long-term growth.
                     </p>
                 </div>
             </section>
@@ -109,16 +108,13 @@ export default function About() {
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">From Vision to Reality</h2>
                             <div className="space-y-4 text-gray-300">
                                 <p>
-                                    Founded in Nigeria with a vision to bridge the digital divide, we have been at the
-                                    forefront of delivering cutting-edge software solutions to businesses across various industries.
+                                    Founded and operated in Nigeria, we partner with organizations to design and implement robust software systems that address complex business challenges across sectors.
                                 </p>
                                 <p>
-                                    Our journey began with a simple belief: that every business, regardless of size,
-                                    deserves access to world-class technology solutions that drive growth and efficiency.
+                                    From strategic planning to technical delivery, our multidisciplinary team combines domain expertise with engineering rigor to deliver scalable, secure, and maintainable solutions.
                                 </p>
                                 <p>
-                                    Today, we're proud to be a trusted partner for companies looking to transform their
-                                    operations and achieve digital excellence in the modern business landscape.
+                                    We collaborate closely with clients to ensure measurable outcomes and sustained value over time.
                                 </p>
                             </div>
                         </div>
@@ -204,7 +200,7 @@ export default function About() {
                         Ready to Work With Us?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                        Let's build something amazing together. Get in touch to discuss your project.
+                        Let us build something amazing together. Get in touch to discuss your project.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">

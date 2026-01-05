@@ -48,8 +48,8 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className={`font-medium transition-all duration-200 hover:scale-105 border-b-2 pb-1 ${active
-                      ? 'text-white border-blue-500 scale-105'
-                      : 'text-gray-300 border-transparent hover:text-white hover:border-blue-500'
+                    ? 'text-white border-blue-500 scale-105'
+                    : 'text-gray-300 border-transparent hover:text-white hover:border-blue-500'
                     }`}
                 >
                   {item.name}
@@ -99,8 +99,8 @@ const Navigation = () => {
                     key={item.name}
                     href={item.href}
                     className={`block px-3 py-2 rounded-md font-medium transition-all duration-200 border-l-2 ${active
-                        ? 'text-white bg-blue-600/20 border-blue-500'
-                        : 'text-gray-300 border-transparent hover:text-white hover:bg-white/10 hover:border-blue-500'
+                      ? 'text-white bg-blue-600/20 border-blue-500'
+                      : 'text-gray-300 border-transparent hover:text-white hover:bg-white/10 hover:border-blue-500'
                       }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -110,7 +110,7 @@ const Navigation = () => {
               })}
               <div className="px-3 py-2">
                 <a
-                  href="mailto:hello@kisware.com"
+                  href="https://wa.me/message/5WGMY6PC2CO2B1"
                   className="block w-full text-center bg-linear-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200"
                   onClick={() => setIsOpen(false)}
                 >

@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 
@@ -61,7 +60,7 @@ export default function Services() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        We deliver strategic, outcome-focused software engineering and product delivery to improve operational efficiency and customer engagement. We partner with clients to define, build, and scale mission-critical systems.
+                        We all deliver strategic, outcome-focused software engineering and product delivery to improve operational efficiency and customer engagement. We partner with clients to define, build, and scale mission-critical systems.
                     </p>
                 </div>
             </section>

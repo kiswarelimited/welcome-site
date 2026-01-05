@@ -47,11 +47,10 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`font-medium transition-all duration-200 hover:scale-105 border-b-2 pb-1 ${
-                    active
+                  className={`font-medium transition-all duration-200 hover:scale-105 border-b-2 pb-1 ${active
                       ? 'text-white border-blue-500 scale-105'
                       : 'text-gray-300 border-transparent hover:text-white hover:border-blue-500'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -62,7 +61,7 @@ const Navigation = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
             <a
-              href="mailto:hello@kisware.com"
+              href="https://wa.me/message/5WGMY6PC2CO2B1"
               className="bg-linear-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-blue-500/25"
             >
               Contact Us
@@ -99,11 +98,10 @@ const Navigation = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`block px-3 py-2 rounded-md font-medium transition-all duration-200 border-l-2 ${
-                      active
+                    className={`block px-3 py-2 rounded-md font-medium transition-all duration-200 border-l-2 ${active
                         ? 'text-white bg-blue-600/20 border-blue-500'
                         : 'text-gray-300 border-transparent hover:text-white hover:bg-white/10 hover:border-blue-500'
-                    }`}
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}

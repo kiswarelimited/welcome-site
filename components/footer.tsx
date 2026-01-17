@@ -4,12 +4,11 @@ import Image from 'next/image'
 
 export default function Footer() {
     return (
-        <footer className="relative bg-gray-900 border-t border-gray-800">
-            {/* Background Elements */}
-            <div className="absolute inset-0 bg-linear-to-br from-gray-800 via-gray-900 to-black"></div>
+        <footer className="relative bg-background border-t border-gray-800">
+            <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950"></div>
             <div className="absolute inset-0 opacity-5">
-                <div className="absolute bottom-10 left-10 w-4 h-4 bg-blue-400 rounded-full"></div>
-                <div className="absolute bottom-20 right-20 w-6 h-6 bg-blue-500 rounded-full"></div>
+                <div className="absolute bottom-10 left-10 w-4 h-4 bg-teal-400 rounded-full"></div>
+                <div className="absolute bottom-20 right-20 w-6 h-6 bg-cyan-400 rounded-full"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
@@ -19,71 +18,55 @@ export default function Footer() {
                     <div className="md:col-span-2">
                         <div className="flex items-center mb-4">
                             <Image
-                                src="/kis-warelogo.png"
-                                alt="Kisware Logo"
+                                src="/icon/steadyflowlogo.png"
+                                alt="Steadyflow Logo"
                                 width={70}
                                 height={70}
                                 className="object-contain"
                             />
-                            <span className="text-white text-xl font-bold">Kisware Limited</span>
+                            <span className="text-white ml-3 text-xl font-bold">Steadyflow</span>
                         </div>
                         <p className="text-gray-400 mb-4 max-w-md">
-                            We deliver enterprise-grade software solutions that drive efficiency,
-                            accelerate growth, and transform business operations for the digital era.
+                            We turn your vision into powerful digital solutions — custom software,
+                            stunning websites, and seamless mobile apps built with precision engineering and creative design.
                         </p>
-                        <div className="flex space-x-4">
-                            {['Twitter', 'LinkedIn', 'GitHub'].map((social) => (
-                                <a
-                                    key={social}
-                                    href="#"
-                                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                                >
-                                    {social}
-                                </a>
-                            ))}
-                        </div>
                     </div>
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-white font-semibold mb-4">Services</h3>
+                        <h3 className="text-white font-semibold mb-4 mt-6">Quick Links</h3>
                         <ul className="space-y-2">
                             {[
-                                { label: 'Custom Software', href: '/services' },
-                                { label: 'Web Applications', href: '/services' },
-                                { label: 'Mobile Development', href: '/services' },
-                                { label: 'Digital Transformation', href: '/services' },
-                                { label: 'UI/UX Design', href: '/services' }
-                            ].map((service) => (
-                                <li key={service.label}>
-                                    <Link href={service.href} className="text-gray-400 hover:text-white transition-colors duration-200">
-                                        {service.label}
-                                    </Link>
+                                { label: 'About Us', href: '/about' },
+                                { label: 'Portfolio', href: '/portfolio' },
+                                { label: 'Blog', href: '/blog' },
+                                { label: 'Careers', href: '/careers' },
+                                { label: 'Privacy Policy', href: '/privacy' }
+                            ].map((item) => (
+                                <li key={item.label}>
+                                    <Link href={item.href} className="text-gray-400 hover:text-white transition-colors duration-200">{item.label}</Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Company */}
+                    {/* Contact */}
                     <div>
-                        <h3 className="text-white font-semibold mb-4">Company</h3>
+                        <h3 className="text-white font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2">
-                            {[
-                                { label: 'About Us', href: '/about' },
-                                { label: 'Services', href: '/services' },
-                                { label: 'Careers', href: '/careers' },
-                                { label: 'Contact', href: 'mailto:hello@kisware.com' },
-                                { label: 'Blog', href: '/blog' }
-                            ].map((item) => (
-                                <li key={item.label}>
-                                    {item.href.startsWith('mailto:') ? (
-                                        <a href={item.href} className="text-gray-400 hover:text-white transition-colors duration-200">{item.label}</a>
-                                    ) : (
-                                        <Link href={item.href} className="text-gray-400 hover:text-white transition-colors duration-200">{item.label}</Link>
-                                    )}
-                                </li>
-                            ))}
+                            <li className="text-gray-400">📍 Remote</li>
+                            <li>
+                                <a href="mailto:steadflowdevelopment@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+                                    📧 steadflowdevelopment@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:09155326252" className="text-gray-400 hover:text-white transition-colors duration-200">
+                                    📞 09155326252
+                                </a>
+                            </li>
                         </ul>
+                        
                     </div>
                 </div>
 
@@ -91,18 +74,7 @@ export default function Footer() {
                 <div className="pt-8 border-t border-gray-800">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="text-gray-400 text-sm mb-4 md:mb-0">
-                            © {new Date().getFullYear()} Kisware Limited. All rights reserved.
-                        </div>
-                        <div className="flex space-x-6 text-sm">
-                            <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                                Privacy Policy
-                            </Link>
-                            <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                                Terms of Service
-                            </Link>
-                            <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                                Cookies
-                            </Link>
+                            © {new Date().getFullYear()} Steadyflow. All rights reserved.
                         </div>
                     </div>
                 </div>

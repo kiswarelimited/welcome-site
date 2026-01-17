@@ -63,18 +63,18 @@ export default function About() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative py-20 bg-gray-900 overflow-hidden">
-                <div className="absolute inset-0 bg-linear-to-br from-gray-800 via-gray-900 to-black"></div>
+            <section className="relative py-20 bg-background overflow-hidden">
+                <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950"></div>
                 <div className="absolute inset-0 opacity-5">
-                    <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400 rounded-full"></div>
-                    <div className="absolute top-40 right-20 w-6 h-6 bg-blue-500 rounded-full"></div>
-                    <div className="absolute bottom-40 left-20 w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <div className="absolute top-20 left-10 w-4 h-4 bg-teal-400 rounded-full"></div>
+                    <div className="absolute top-40 right-20 w-6 h-6 bg-cyan-400 rounded-full"></div>
+                    <div className="absolute bottom-40 left-20 w-3 h-3 bg-blue-500 rounded-full"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                         Building The Future
-                        <span className="text-blue-400 block">Through Innovation</span>
+                        <span className="text-cyan-400 block">Through Innovation</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -84,7 +84,7 @@ export default function About() {
             </section>
 
             {/* Stats Section */}
-            <section className="py-16 bg-gray-800/50">
+            <section className="py-16 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {stats.map((stat, index) => (
@@ -98,12 +98,12 @@ export default function About() {
             </section>
 
             {/* Our Story Section */}
-            <section className="py-20 bg-gray-900">
+            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950">
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-400/20 mb-6">
-                                <span className="text-sm font-medium text-blue-300">Our Story</span>
+                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 border border-cyan-400/20 mb-6">
+                                <span className="text-sm font-medium text-teal-300">Our Story</span>
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">From Vision to Reality</h2>
                             <div className="space-y-4 text-gray-300">
@@ -118,7 +118,7 @@ export default function About() {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-2xl p-8 border border-gray-700">
+                        <div className="bg-linear-to-br from-teal-600/20 to-blue-600/20 rounded-2xl p-8 border border-gray-700">
                             <div className="text-center">
                                 <div className="text-2xl font-bold text-white mb-4">Registered in Nigeria</div>
                                 <p className="text-gray-300 mb-4">
@@ -134,11 +134,11 @@ export default function About() {
             </section>
 
             {/* Values Section */}
-            <section className="py-20 bg-gray-900 border-t border-gray-800">
+            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950 border-t border-gray-800">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-400/20 mb-8">
-                            <span className="text-sm font-medium text-blue-300">Our Values</span>
+                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 border border-cyan-400/20 mb-8">
+                            <span className="text-sm font-medium text-teal-300">Our Values</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">What Drives Us</h2>
                         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -159,11 +159,11 @@ export default function About() {
             </section>
 
             {/* Team Section */}
-            <section className="py-20 bg-gray-900 border-t border-gray-800">
+            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950 border-t border-gray-800">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-400/20 mb-8">
-                            <span className="text-sm font-medium text-blue-300">Our Team</span>
+                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 border border-cyan-400/20 mb-8">
+                            <span className="text-sm font-medium text-teal-300">Our Team</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Meet The Experts</h2>
                         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -173,12 +173,12 @@ export default function About() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {team.map((member, index) => (
-                            <div key={index} className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 text-center hover:border-blue-500/30 transition-all duration-300">
-                                <div className="w-20 h-20 bg-linear-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                            <div key={index} className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 text-center hover:border-teal-500/30 transition-all duration-300">
+                                <div className="w-20 h-20 bg-linear-to-br from-teal-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
                                     {member.name.split(' ').map(n => n[0]).join('')}
                                 </div>
                                 <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
-                                <p className="text-blue-400 text-sm mb-3">{member.role}</p>
+                                <p className="text-cyan-400 text-sm mb-3">{member.role}</p>
                                 <p className="text-gray-300 text-sm mb-4">{member.description}</p>
                                 <div className="space-y-1">
                                     {member.expertise.map((skill, idx) => (
@@ -194,7 +194,7 @@ export default function About() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gray-900 border-t border-gray-800">
+            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950 border-t border-gray-800">
                 <div className="max-w-4xl mx-auto px-6 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Ready to Work With Us?
@@ -206,7 +206,7 @@ export default function About() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/contact"
-                            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+                            className="bg-linear-to-r from-cyan-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-cyan-400 hover:to-blue-700 transition-colors duration-200"
                         >
                             Get In Touch
                         </Link>

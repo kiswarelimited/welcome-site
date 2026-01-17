@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Footer from '@/components/footer'
 
-export default function Services() {
+export default function Projects() {
     const services = [
         {
             icon: '💻',
@@ -41,6 +41,73 @@ export default function Services() {
         }
     ]
 
+    const projects = [
+        {
+            title: 'Sash Lounge',
+            description: 'Premium window treatment showroom featuring elegant product displays and booking system.',
+            category: 'E-commerce & Showcase',
+            url: 'https://sashlounge.co.uk',
+            tech: ['Next.js', 'React', 'Tailwind CSS'],
+            imageColor: 'from-purple-500 to-pink-500'
+        },
+        {
+            title: 'OLA 247',
+            description: 'On-demand logistics and delivery platform connecting businesses with reliable transport services.',
+            category: 'Logistics Platform',
+            url: 'https://www.ola247.co.uk',
+            tech: ['React', 'Node.js', 'MongoDB'],
+            imageColor: 'from-blue-500 to-cyan-500'
+        },
+        {
+            title: 'Etherstaff Solutions',
+            description: 'Healthcare staffing solutions platform matching medical professionals with healthcare facilities.',
+            category: 'Healthcare Staffing',
+            url: 'https://etherstaff.solutions',
+            tech: ['Vue.js', 'Laravel', 'MySQL'],
+            imageColor: 'from-green-500 to-teal-500'
+        },
+        {
+            title: 'MedBridge Afrik',
+            description: 'Medical equipment procurement and healthcare solutions platform for African healthcare providers.',
+            category: 'Healthcare E-commerce',
+            url: 'https://www.medbridgeafrik.com',
+            tech: ['React', 'Django', 'PostgreSQL'],
+            imageColor: 'from-red-500 to-orange-500'
+        },
+        {
+            title: 'Cidali Travel',
+            description: 'Luxury travel and tour packages with seamless booking experience and destination management.',
+            category: 'Travel & Tourism',
+            url: 'https://cidalitravel.com',
+            tech: ['Next.js', 'Strapi', 'GraphQL'],
+            imageColor: 'from-amber-500 to-yellow-500'
+        },
+        {
+            title: 'Positive Impacts Healthcare',
+            description: 'Healthcare services platform providing nursing and healthcare staffing solutions across Ireland.',
+            category: 'Healthcare Services',
+            url: 'https://www.positiveimpactshealthcare.ie',
+            tech: ['React', 'Express.js', 'MongoDB'],
+            imageColor: 'from-indigo-500 to-blue-500'
+        },
+        {
+            title: 'Visit Lamu',
+            description: 'Tourism promotion platform showcasing Lamu archipelago attractions, culture, and accommodations.',
+            category: 'Tourism Portal',
+            url: 'https://www.visitlamu.co',
+            tech: ['WordPress', 'PHP', 'JavaScript'],
+            imageColor: 'from-emerald-500 to-green-500'
+        },
+        {
+            title: 'Nimbus LMS',
+            description: 'Cloud-based Learning Management System with Canvas integration for educational institutions.',
+            category: 'Education Technology',
+            url: 'https://nimbuslms.cloud/login/canvas',
+            tech: ['React', 'Python', 'AWS'],
+            imageColor: 'from-gray-700 to-gray-900'
+        }
+    ]
+
     return (
         <>
             {/* Hero Section */}
@@ -53,67 +120,71 @@ export default function Services() {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                        What We Build
-                        <span className="text-cyan-400 block">Custom Software • Web & Mobile • UI/UX</span>
+                        Our Portfolio
+                        <span className="text-cyan-400 block">Real Solutions • Proven Results • Client Success</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        Steadyflow delivers custom software, stunning websites, and seamless mobile apps with precision engineering and creative design.
+                        Explore our portfolio of successful projects across various industries. Each project showcases our commitment to quality, innovation, and client satisfaction.
                     </p>
                 </div>
             </section>
 
-            {/* Services Grid */}
-            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950">
+            {/* Projects Grid */}
+            <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950 border-t border-gray-800">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="max-w-3xl mx-auto text-center mb-8 text-gray-300">
-                        <p>We combine technical excellence with practical business insight to deliver measurable outcomes.</p>
-                        <ul className="mt-4 flex flex-wrap gap-6 justify-center text-sm text-gray-400">
-                            <li className="font-medium">Proven delivery</li>
-                            <li className="font-medium">Security-first approach</li>
-                            <li className="font-medium">Scalable architecture</li>
-                        </ul>
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
+                        <p className="text-gray-300 max-w-2xl mx-auto">A selection of our recent work across different industries and technologies.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 p-6 hover:border-teal-500/30 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 group"
+                                className="bg-gray-800/50 rounded-xl border border-gray-700 overflow-hidden hover:border-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group"
                             >
-                                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                                    {service.icon}
+                                <div className={`h-40 bg-linear-to-br ${project.imageColor} relative overflow-hidden`}>
+                                    <div className="absolute inset-0 bg-black/20"></div>
+                                    <div className="absolute top-4 left-4">
+                                        <span className="bg-black/50 text-white text-xs font-medium px-3 py-1 rounded-full">
+                                            {project.category}
+                                        </span>
+                                    </div>
                                 </div>
-
-                                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">
-                                    {service.title}
-                                </h3>
-
-                                <p className="text-gray-300 mb-4 leading-relaxed">
-                                    {service.description}
-                                </p>
-
-                                <div className="mb-4">
-                                    <h4 className="text-white font-medium mb-2">Includes:</h4>
-                                    <ul className="space-y-1">
-                                        {service.features.map((feature, idx) => (
-                                            <li key={idx} className="text-gray-400 text-sm flex items-center">
-                                                <div className="w-1 h-1 bg-teal-400 rounded-full mr-2"></div>
-                                                {feature}
-                                            </li>
+                                
+                                <div className="p-6">
+                                    <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className="text-gray-300 text-sm mb-4">
+                                        {project.description}
+                                    </p>
+                                    
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {project.tech.map((tech, idx) => (
+                                            <span 
+                                                key={idx}
+                                                className="bg-gray-700/50 text-gray-300 text-xs font-medium px-3 py-1 rounded-full"
+                                            >
+                                                {tech}
+                                            </span>
                                         ))}
-                                    </ul>
-                                </div>
-
-                                <div className="flex items-center justify-end pt-4 border-t border-gray-700">
-                                    <Link
-                                        href="/contact"
-                                        className="bg-linear-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-cyan-400 hover:to-blue-700 transition-colors duration-200"
+                                    </div>
+                                    
+                                    <a
+                                        href={project.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-medium text-sm group-hover:underline"
                                     >
-                                        Contact Us
-                                    </Link>
+                                        View Live Project
+                                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         ))}
@@ -130,21 +201,21 @@ export default function Services() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 hover:border-teal-500/30 transition-all duration-300">
                             <h3 className="text-white font-semibold mb-2">Global logistics provider</h3>
                             <p className="text-gray-300 text-sm mb-2">Challenge: Fragmented legacy systems caused delays and operational complexity.</p>
                             <p className="text-gray-300 text-sm">Solution: Designed and delivered a centralized logistics platform integrating tracking, automation, and real-time reporting.</p>
                             <p className="text-teal-400 text-sm mt-3 font-medium">Result: Reduced processing time and improved on-time deliveries.</p>
                         </div>
 
-                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 hover:border-cyan-500/30 transition-all duration-300">
                             <h3 className="text-white font-semibold mb-2">Fintech startup</h3>
                             <p className="text-gray-300 text-sm mb-2">Challenge: Low user activation due to friction in onboarding and product complexity.</p>
                             <p className="text-gray-300 text-sm">Solution: Delivered a streamlined onboarding flow and optimized mobile experience focused on conversion.</p>
                             <p className="text-cyan-400 text-sm mt-3 font-medium">Result: Improved activation and engagement metrics.</p>
                         </div>
 
-                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+                        <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 hover:border-blue-500/30 transition-all duration-300">
                             <h3 className="text-white font-semibold mb-2">Regional retail chain</h3>
                             <p className="text-gray-300 text-sm mb-2">Challenge: Inventory inaccuracies and stockouts impacted sales and customer experience.</p>
                             <p className="text-gray-300 text-sm">Solution: Implemented a centralized inventory and forecasting system integrated with point-of-sale.</p>
@@ -190,8 +261,8 @@ export default function Services() {
             {/* CTA Section */}
             <section className="py-20 bg-linear-to-br from-slate-950 via-slate-900 to-sky-950 border-t border-gray-800">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Build Something Amazing?</h2>
-                    <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">Let's discuss your project. No obligation, just a friendly conversation about your needs.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+                    <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">Let's discuss your next project. No obligation, just a friendly conversation about your needs.</p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -202,6 +273,8 @@ export default function Services() {
                         </Link>
                         <Link
                             href="https://wa.me/message/5WGMY6PC2CO2B1"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="border border-gray-600 text-gray-300 px-8 py-3 rounded-lg font-semibold hover:bg-white/5 hover:border-gray-400 transition-all duration-200"
                         >
                             Chat with Our Team

@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Kisware - Software Solutions",
+  title: "SteadyFlow",
   description: "Keep it Simple! Building innovative software solutions for your business.",
 };
 
